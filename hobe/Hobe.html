@@ -72,6 +72,39 @@
       border-radius: 5px;
     }
 
+    /* Search Bar */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #f4f4f4;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 20px;
+      width: 200px;
+    }
+
+    .search-bar button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #0056b3;
+    }
+
     /* Hero Section */
     .hero {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://scontent.fcai22-2.fna.fbcdn.net/v/t39.30808-6/318217475_223032620058208_2015192867693817367_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Hnb1bJb1zlAQ7kNvgHE7-9n&_nc_zt=23&_nc_ht=scontent.fcai22-2.fna&_nc_gid=AkKfsVKxZqs5xwO3PUPzk_s&oh=00_AYBPy9BE7zsoAxk_ILEZ6sLD79MZKi_uUQ3pz7-1YuUnxA&oe=67A82F1D');
@@ -134,68 +167,68 @@
       color: #555;
     }
 
-/* Cards */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
+    /* Cards */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+    }
 
-.card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 300px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* This ensures the button stays at the bottom */
-  min-height: 400px; /* Minimum height to ensure button stays inside */
-}
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* This ensures the button stays at the bottom */
+      min-height: 400px; /* Minimum height to ensure button stays inside */
+    }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
-.card h3 {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  color: #333;
-}
+    .card h3 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      color: #333;
+    }
 
-.card p {
-  font-size: 1rem;
-  color: #777;
-  flex-grow: 1; /* Ensures the paragraph takes up any extra space */
-}
+    .card p {
+      font-size: 1rem;
+      color: #777;
+      flex-grow: 1; /* Ensures the paragraph takes up any extra space */
+    }
 
-.card button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-top: auto; /* Ensures the button stays at the bottom */
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
+    .card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: auto; /* Ensures the button stays at the bottom */
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
 
-.card button:hover {
-  background-color: #0056b3;
-}
+    .card button:hover {
+      background-color: #0056b3;
+    }
 
     /* Payment Panel */
     .payment-panel {
@@ -301,6 +334,61 @@
         margin-bottom: 2rem;
       }
     }
+/* Proud of Section */
+#proud-of {
+  background-color: #007bff;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#proud-of h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.proud-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.proud-item {
+  background-color: #0056b3;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.proud-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.proud-item h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.proud-item p {
+  font-size: 1.2rem;
+  color: #e1e1e1;
+  font-weight: 500;
+}
+
   </style>
 </head>
 <body>
@@ -317,6 +405,11 @@
         <li><a href="#courses">Courses</a></li>
       </ul>
     </nav>
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search courses...">
+      <button>Search</button>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -391,45 +484,101 @@
     </div>
   </div>
 
+<!-- Proud of Section -->
+<section id="proud-of">
+  <h2>We have:</h2>
+  <div class="proud-content">
+    <div class="proud-item">
+      <h3 class="counter" id="coursesCounter" data-target="7">0</h3>
+      <p>Courses</p>
+    </div>
+    <div class="proud-item">
+      <h3 class="counter" id="studentsCounter" data-target="17">0</h3>
+      <p>Students</p>
+    </div>
+    <div class="proud-item">
+      <h3 class="counter" id="learnersCounter" data-target="500">0</h3>
+      <p>Online Learners</p>
+    </div>
+    <div class="proud-item">
+      <h3 class="counter" id="countriesCounter" data-target="9">0</h3>
+      <p>Countries</p>
+    </div>
+  </div>
+</section>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 HebaAbozaid Academy. All rights reserved.</p>
   </footer>
   <script>
-// JavaScript for Payment Panel
-function showPaymentPanel(courseName) {
-  const paymentPanel = document.getElementById('paymentPanel');
-  const panelContent = document.querySelector('.payment-panel-content h2');
-  panelContent.textContent = `How to Pay for ${courseName}`;
-  paymentPanel.style.display = 'flex';
-}
-
-function closePaymentPanel() {
-  const paymentPanel = document.getElementById('paymentPanel');
-  paymentPanel.style.display = 'none';
-}
-// Adding event listener to close button
-document.getElementById('closePaymentPanelBtn').addEventListener('click', closePaymentPanel);
-    // Scroll to Courses section (Explore button)
-    document.getElementById('exploreButton').addEventListener('click', function () {
-      document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+    // JavaScript for toggling payment panel
+    const paymentPanel = document.getElementById("paymentPanel");
+    const closePaymentPanelBtn = document.getElementById("closePaymentPanelBtn");
+  
+    function showPaymentPanel(courseName) {
+      paymentPanel.style.display = "flex";
+      const courseTitle = paymentPanel.querySelector("h2");
+      courseTitle.textContent = `How to Pay for ${courseName}`;
+    }
+  
+    closePaymentPanelBtn.addEventListener("click", function () {
+      paymentPanel.style.display = "none";
     });
   
-    // Scroll to Home, About, and Courses sections with smooth scroll
-    document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-      e.preventDefault();
-      document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-    });
+    // Counter Animation (Triggered on scroll)
+    function animateCounter(id, start, end, duration) {
+      let startTime = null;
+      const counter = document.getElementById(id);
   
-    document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
-      e.preventDefault();
-      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-    });
+      function updateCounter(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const value = Math.min(start + (end - start) * (progress / duration), end);
+        counter.innerText = Math.floor(value);
   
-    document.querySelector('a[href="#courses"]').addEventListener('click', function (e) {
-      e.preventDefault();
-      document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
-    });
+        if (progress < duration) {
+          requestAnimationFrame(updateCounter);
+        }
+      }
+  
+      requestAnimationFrame(updateCounter);
+    }
+  
+    // Check if the "Proud of" section is in the viewport
+    const counters = document.querySelectorAll('.counter');
+    const proudOfSection = document.getElementById('proud-of');
+    let counterAnimated = false;
+  
+    // Detect when the section is in the viewport
+    const isInViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    };
+  
+    // On scroll, trigger the counter animation
+    const onScroll = () => {
+      if (isInViewport(proudOfSection) && !counterAnimated) {
+        counters.forEach(counter => {
+          const target = counter.getAttribute('data-target');
+          const id = counter.id;
+          const startValue = 0;
+          const endValue = parseInt(target, 10);
+          const duration = 2000;
+          animateCounter(id, startValue, endValue, duration);
+        });
+  
+        counterAnimated = true; // Prevent re-triggering on scroll
+      }
+    };
+  
+    // Listen for scroll events
+    window.addEventListener('scroll', onScroll);
+  
+    // Trigger the counter animation when the page loads, if the section is already visible
+    window.onload = () => {
+      onScroll();
+    };
   </script>
   
 </body>
